@@ -1,0 +1,37 @@
+
+<%- include("partials/header.ejs") %>
+    <div class="main-container">
+        <div class="side-bar">
+            <div class="side-bar-container">
+                <ul>
+                    <h2>Previous Titles</h2>
+                    <% if(blogList.length > 0){ %>
+                        <% blogList.forEach((blog, index)=>{%>
+                            <a class="blog-titles" href="/blog?data=<%= index %>"> <%= index+1 %>. <%= blog.title %>  </a>
+                        <%});} %> 
+                </ul>
+            </div>
+        </div>
+        <div class="blog-container">
+            <div class="blog-body-container">
+                <% if(locals.id > 0) { %>
+                    <h1> <%= blogList[id].title %> </h1>
+                    <h4> <%= blogList[id].dateCreated %> </h4>
+                    <p> <%= blogList[id].blog %> </p>
+                <% } else if(locals.blogList.length > 0) { %>
+                    <h1> <%= blogList[0].title %> </h1>
+                    <h4> <%= blogList[0].dateCreated %> </h4>
+                    <p> <%= blogList[0].blog %> </p>
+                <% } %>
+            </div>
+            <!-- <div class="button-container">
+                <button>Create</button>
+                <button>Update</button>
+                <button>Delete</button>
+            </div> -->
+            
+        </div>
+    </div>
+    
+
+<%- include("partials/footer.ejs") %>

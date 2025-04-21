@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F1EFEC;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    margin-right: 30px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+header p {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #123458;
+}
+.header-container {
+    background-color: #D4C9BE;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    justify-self: flex-start;
+    margin-left: 30px;
+    padding: 10px;
+}
+.header-menu {
+    justify-self: flex-end;
+    margin-right: 30px;
+    padding: 10px;
+}
+.main-container {
+    display: flex;
+    width: 100%;
+    min-height: 75vh;
+    color: #123458;
+}
+.side-bar {
+    width: 30%;
+    background-color: #D4C9BE;
+    height: inherit;
+}
+.side-bar-container {
+    margin-top: 80px;
+}
+.side-bar h2 {
+    padding-bottom: 30px;
+}
+.side-bar h2, .side-bar p {
+    text-decoration: none;
+    color: #123458;
+}
+.blog-container {
+    width: 70%;
+    margin: 0px 300px 0px 300px;
+}
+.blog-body-container h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 75px;
+}
+.blog-body-container h4 {
+    font-size: .8rem;
+    text-align: center;
+}
+.blog-body-container p {
+    font-size: 1.3rem;
+    text-align: justify;
+    line-height: 2;
+    word-spacing: 5px;
+}
+.blog-titles {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 15vh;
+    margin-bottom: 0;
+}
+
+
+/* Styles for newBlog.ejs */
+.new-blog-main-container {
+    min-height: 72vh;
+    width: 100%;
+    color: #030303;
+}
+.new-blog-container {
+    width: 80%;
+    min-height: 65vh;
+    align-self: center;
+    justify-self: center;
+
+}
+#blog-form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+#new-blog-title,#new-blog-body,#btn-save {
+    font-size: 1.5rem;
+    border: none;
+    background-color: #D4C9BE;
+    border-color: #D4C9BE;
+    border-radius: 5px;
+    padding: 10px;
+}
+#new-blog-title,#btn-save {
+    height: 50px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+#new-blog-body {
+    margin-top: 20px;
+    height: 300px;
+}
+#btn-save {
+    border: #030303 2px solid;
+    background-color: #F1EFEC;
+}
+#btn-save:hover {
+    
+    background-color: #D4C9BE;
+}
